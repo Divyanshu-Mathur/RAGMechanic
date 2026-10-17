@@ -1,0 +1,26 @@
+@'
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.coverage
+dist/
+build/
+
+.deepeval/
+chroma_db/
+dist/
+
+output/
+*.db
+*.sqlite
+*.sqlite3
+
+.vscode/
+.idea/
+'@ | Set-Content .gitignore

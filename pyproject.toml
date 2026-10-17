@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragmechanic"
+version = "0.1.0"
+description = "A framework for building, evaluating, and diagnosing RAG systems."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+
+
+dependencies = [
+    "langchain",
+    "langchain-community",
+    "langchain-text-splitters",
+    "langchain-classic",
+    "pypdf",
+    "docx2txt",
+    "python-pptx",
+    "chardet",
+    "tiktoken",
+    "python-dotenv",
+    "dotenv",
+    "tqdm",
+
+    "langchain-huggingface",
+    "sentence-transformers",
+
+    "chromadb",
+    "langchain-chroma",
+
+    "faiss-cpu",
+
+    "langchain-google-genai",
+
+    "langchain-xai",
+
+    "langchain-mistralai",
+
+    "langchain-anthropic",
+    "langchain-qdrant",
+
+    "langchain-pinecone",
+    "deepeval",
+
+    "unstructured",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
