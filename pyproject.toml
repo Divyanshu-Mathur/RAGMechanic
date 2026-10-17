@@ -12,12 +12,13 @@ license = "MIT"
 
 
 dependencies = [
-    "langchain",
-    "langchain-community",
-    "langchain-text-splitters",
-    "langchain-classic",
-    "pypdf",
-    "docx2txt",
+    "langchain-core>=1.2,<2.0",
+    "langchain>1.2",
+    "langchain-community>=0.4,<0.5",
+    "langchain-text-splitters>1.0,<2.0",
+    "langchain-classic>1.0.1",
+    "pypdf>6.0",
+    "docx2txt>=0.9",
     "python-pptx",
     "chardet",
     "tiktoken",
@@ -25,8 +26,8 @@ dependencies = [
     "dotenv",
     "tqdm",
 
-    "langchain-huggingface",
-    "sentence-transformers",
+    "langchain-huggingface>1.0",
+    "sentence-transformers>5.2",
 
     "chromadb",
     "langchain-chroma",
@@ -43,7 +44,7 @@ dependencies = [
     "langchain-qdrant",
 
     "langchain-pinecone",
-    "deepeval",
+    "deepeval>=4.1.5,<5.0.0",
 
     "unstructured",
 ]
