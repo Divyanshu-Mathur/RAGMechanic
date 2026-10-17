@@ -12,19 +12,13 @@ The goal is to make it easier to build RAG applications, compare configurations,
 - [Features](#features)
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
+- [Installation](#install)
 - [Quick Start](#quick-start)
 - [Core Components](#core-components)
 - [Vector Stores](#vector-stores)
 - [LLM Providers](#llm-providers)
 - [Evaluation and Reporting](#evaluation-and-reporting)
-- [Configuration](#configuration)
-- [Examples](#examples)
-- [Development Setup](#development-setup)
-- [Testing](#testing)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+- [Examples](#Example-Notebook)
 
 ## Overview
 
@@ -161,7 +155,7 @@ ragmechanic/
 The `documents/` and `output/` directories shown above are useful for local development and examples. They do not necessarily need to be distributed as part of the installed package.
 
 
-### Install
+## Install
 
 For development or when using the latest repository version:
 
