@@ -12,6 +12,7 @@ The goal is to make it easier to build RAG applications, compare configurations,
 - [Features](#features)
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
+- [Install](#install)
 - [Installation](#install)
 - [Quick Start](#quick-start)
 - [Core Components](#core-components)
@@ -157,42 +158,54 @@ The `documents/` and `output/` directories shown above are useful for local deve
 
 ## Install
 
-For development or when using the latest repository version:
+### Option 1: Install from PyPI (Recommended)
+
+Install the latest published release of RAGMechanic:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/ragmechanic.git
-cd ragmechanic
+python -m pip install ragmechanic
+```
 
+### Option 2: Install from GitHub (Development)
+
+To use the latest repository version or contribute to development, clone the repository:
+
+```bash
+git clone https://github.com/Divyanshu-Mathur/RAGMechanic.git
+cd ragmechanic
+```
+
+Create a virtual environment:
+
+```bash
 python -m venv .venv
 ```
 
 Activate the environment.
 
-Windows PowerShell:
+**Windows PowerShell:**
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-Linux or macOS:
+**Linux or macOS:**
 
 ```bash
 source .venv/bin/activate
 ```
 
-Install the project in editable mode:
+Upgrade pip and install the package in editable mode:
 
 ```bash
 python -m pip install --upgrade pip
-pip install -e .
+python -m pip install -e .
 ```
-
-Install the integrations required for your chosen configuration separately.
 
 ## Quick Start
 
 ```python
-from ragmechanic.pipeline import RAGPipeline
+from ragmechanic import RAGPipeline
 
 # Configure the pipeline using supported arguments.
 pipeline = RAGPipeline(
@@ -205,13 +218,7 @@ pipeline = RAGPipeline(
     chunk_overlap=150,
 )
 
-# Run a query using the query method exposed by your version.
-# Inspect the public API for the exact method name and arguments.
 ```
-
-For a working example, see the examples.ipynb file.
-
-Before using this snippet as a runnable example, verify the accepted values for `docs`, `embedding_model`, `llm_provider`, `llm_model`, and `vector_store`, along with the actual query and evaluation methods.
 
 ## Core Components
 
@@ -288,7 +295,6 @@ RAGMechanic contains modules for the following vector-store backends:
 
 Each backend may have different requirements for persistence, authentication, indexing, and configuration.
 
-Refer to the relevant integration documentation for configuration details and supported options.
 
 ## LLM Providers
 

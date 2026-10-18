@@ -24,7 +24,7 @@ import uuid
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[2]
 
-OUTPUT_DIR = PACKAGE_ROOT / "output"
+OUTPUT_DIR = Path.cwd() / "output"
 
 DATABASE_DIR = OUTPUT_DIR / "database"
 DATABASE_DIR.mkdir(parents=True, exist_ok=True)
